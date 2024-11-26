@@ -8,7 +8,7 @@ use pocketmine\item\ItemTypeIds;
 use pocketmine\utils\CloningRegistryTrait;
 
 /**
- * @method static Crossbow CROSSBOW()
+ * @method static Trident TRIDENT()
  */
 class ExtraVanillaItems{
     use CloningRegistryTrait;
@@ -39,6 +39,6 @@ class ExtraVanillaItems{
      * @return void
      */
     protected static function setup(): void{
-        self::register('crossbow', new Crossbow(new ItemIdentifier(ItemTypeIds::newId()), 'Crossbow'));
+        self::register('trident', new Crossbow(new ItemIdentifier(ItemTypeIds::newId()), 'Trident'));
     }
 }
