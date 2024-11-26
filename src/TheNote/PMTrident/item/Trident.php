@@ -23,7 +23,7 @@ class Trident extends Tool implements Releasable
         return 250;
     }
 
-    public function onReleaseUsing(Player $player): ItemUseResult
+    public function onReleaseUsing(Player $player, array &$returnedItems): ItemUseResult
     {
         $location = $player->getLocation();
 
