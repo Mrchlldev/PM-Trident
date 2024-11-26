@@ -39,6 +39,6 @@ class ExtraVanillaItems{
      * @return void
      */
     protected static function setup(): void{
-        self::register('trident', new Crossbow(new ItemIdentifier(ItemTypeIds::newId()), 'Trident'));
+        self::register('trident', new Trident(new ItemIdentifier(ItemTypeIds::newId()), 'Trident'));
     }
 }
