@@ -68,7 +68,7 @@ class Trident extends Tool implements Releasable
         return 8;
     }
 
-    public function onDestroyBlock(Block $block): bool
+    public function onDestroyBlock(Block $block, array &$returnedItems): bool
     {
         if(!$block->getBreakInfo()->breaksInstantly()){
             return $this->applyDamage(2);
@@ -76,7 +76,7 @@ class Trident extends Tool implements Releasable
         return false;
     }
 
-    public function onAttackEntity(Entity $victim): bool
+    public function onAttackEntity(Entity $victim, array &$returnedItems): bool
     {
         return $this->applyDamage(1);
     }
