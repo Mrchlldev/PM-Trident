@@ -4,8 +4,10 @@ declare(strict_types = 1);
 
 namespace TheNote\PMTrident\item;
 
+use TheNote\PMTrident\item\Trident;
 use TheNote\PMTrident\item\ExtraVanillaItems;
 use pocketmine\item\ItemIdentifier;
+use pocketmine\data\bedrock\item\SavedItemData;
 use pocketmine\item\ItemTypeIds as ItemIds;
 use pocketmine\item\StringToItemParser;
 use pocketmine\world\format\io\GlobalItemDataHandlers;
