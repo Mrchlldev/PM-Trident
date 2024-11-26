@@ -1,6 +1,6 @@
 <?php
 
-namespace alvin0319\Crossbow\item;
+namespace TheNote\PMTrident\item;
 
 use pocketmine\item\Item;
 use pocketmine\item\ItemIdentifier;
