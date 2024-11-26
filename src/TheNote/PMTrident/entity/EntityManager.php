@@ -4,7 +4,7 @@ declare(strict_types = 1);
 
 namespace TheNote\PMTrident\entity;
 
-use pocketmine\data\bedrock\EntityLegacyIds;
+use pocketmine\network\mcpe\protocol\types\entity\EntityIds;
 use pocketmine\data\SavedDataLoadingException;
 use pocketmine\entity\EntityDataHelper;
 use pocketmine\entity\EntityFactory;
@@ -27,6 +27,6 @@ class EntityManager {
                 throw new SavedDataLoadingException("Trident Item is invalid");
             }
             return new ThrownTrident(EntityDataHelper::parseLocation($nbt, $world), $item, null, $nbt);
-        }, ['Trident', 'ThrownTrident', 'minecraft:trident' , 'minecraft:trown_trident'], EntityLegacyIds::TRIDENT);
+        }, ['Trident', 'ThrownTrident', 'minecraft:trident' , 'minecraft:trown_trident'], EntityIds::TRIDENT);
     }
 }
