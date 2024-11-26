@@ -1,11 +1,9 @@
-name: Trident
+name: PM-Trident
 main: TheNote\PMTrident\Main
-version: 2.0.1
-api:
-  - 4.0.0
+version: 2.0.5
+api: 5.0.0
 author: TheNote
-mcpe-protocol: 560
 authors:
-  #Thanks to the old Code!
+  - Mrchlldev
   - CortexPE
-description: Add Trident
+description: "Add trident to your server"
